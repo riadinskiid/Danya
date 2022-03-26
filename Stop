@@ -1,0 +1,38 @@
+import React from 'react';
+import '../styles/templates/Customers.css';
+import claro from '../assets/images/claro-logo.png';
+import helena from '../assets/images/helena-health.png';
+import ingeteknia from '../assets/images/ingeteknia.png';
+import cryptoAcademy from '../assets/images/cryptoacademy.jpg';
+
+
+const Customers = (props) =>{
+  return(
+    <section className='customers'>
+      <h1>CLIENTES</h1>
+      <h3>Empresas que confían en nosotros para viralizar su marca en crecimiento</h3>
+      <div className='costumers__container'>
+      <article className='customers__delay'>
+        <img className='claro-logo' src={claro} alt="claro logo"/>
+        <img className='helena-health'src={helena} alt="helena-health"/> 
+        <img className='ingeteknia' src={ingeteknia} alt="ingeteknia"/> 
+        <img className='cryptoacademy' src={cryptoAcademy} alt="cryptoacademy"/>
+        <img className='cliente-1' alt="cliente-1"/> 
+        <img className='cliente-2' alt="cliente-2"/> 
+        <img className='cliente-3' alt="cliente-3"/> 
+      </article>
+      {/* <article className='customers__delay-2'>
+        <img className='claro-logo' src={claro} alt="claro logo"/>
+        <img className='helena-health'src={helena} alt="helena-health"/> 
+        <img className='ingeteknia' src={ingeteknia} alt="ingeteknia"/> 
+        <img className='cliente-1' alt="cliente-1"/> 
+        <img className='cliente-2' alt="cliente-2"/> 
+        <img className='cliente-3' alt="cliente-3"/> 
+      </article> */}
+      </div>
+      {props.children}
+    </section>
+  )
+}
+
+export default Customers;
